@@ -19,12 +19,13 @@ This application thus can help NGOs too in getting funds , as well as if any use
 # HOW To run this web app.
 
 1) download the zip or clone.
-2) make sure you have node.js installed and mongodb connected properly.
-3) run npm install
-4) cd ngo
-5) again run npm install to install all the dependencies on the client side as well
-6) finally run cd..
-7) then run npm run dev
-8) withinh few seconds, your application will run.
+2) Remember the client or the ngo folder is actually in the master branch of this repo.
+3) make sure you have node.js installed and mongodb connected properly.
+4) run npm install
+5) cd ngo
+6) again run npm install to install all the dependencies on the client side as well
+7) finally run cd..
+8) then run npm run dev
+9) withinh few seconds, your application will run.
 
    Hope you like it! ;D
