@@ -18,7 +18,7 @@ const postSchema =new mongoose.Schema(
        },
        phone:
        {
-        type:Number,
+        type:String,
         required:true,
 
        },
@@ -46,7 +46,7 @@ const postSchema =new mongoose.Schema(
        photo:
        {
         data:Buffer,
-        contentType: String
+        contentType:String,
        },
       
        
