@@ -12,6 +12,8 @@ import Login from './pages/Auth/Login';
 import NgoLogin from './pages/Auth/NgoLogin';
 import UserLogin from './pages/Auth/UserLogin';
 import CreatePost from './pages/Post/CreatePost';
+import DisplayPost from './pages/Post/DisplayPost';
+import Donate from './pages/Donate';
 function App() {
   return (
     <>
@@ -26,7 +28,9 @@ function App() {
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/ngologin' element={<NgoLogin/>}></Route>
         <Route path='/userlogin' element={<UserLogin/>}></Route>
-        <Route path='/createpost' element={<CreatePost/>}></Route>
+        <Route path='/create-post' element={<CreatePost/>}></Route>
+        <Route path='/viewposts' element={<DisplayPost/>}></Route>
+        <Route path='/donate'element={<Donate/>}></Route>
       </Routes>
     </>
   );

@@ -17,7 +17,7 @@ const NgoLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/v1/auth/ngologin", {
+      const res = await axios.post("/api/v1/auth1/ngologin", {
         email,
         password,
       });

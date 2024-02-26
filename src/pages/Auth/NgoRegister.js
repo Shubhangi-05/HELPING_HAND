@@ -18,7 +18,7 @@ const NgoRegister = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/v1/auth/ngoregister", {
+      const res = await axios.post("/api/v1/auth1/ngoregister", {
         organization,
         email,
         password,

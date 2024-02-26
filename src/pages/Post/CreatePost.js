@@ -46,10 +46,11 @@ const CreatePost = () => {
       productData.append("phone", phone);
       productData.append("address", address);
       productData.append("city", city);
-      productData.append("photo", photo);
       productData.append("category", category);
+      productData.append("photo", photo);
+      
       const { data } = axios.post(
-        "/api/v1/createpost",
+        "/api/v1/post1/create-post",
         productData
       );
       if (data?.success) {
@@ -62,6 +63,27 @@ const CreatePost = () => {
       console.log(error);
       toast.error("something went wrong");
     }
+
+    // try {
+    //   const res = await axios.post("/api/v1/post1/create-post", {
+    //     name,
+    //     description,
+    //     email,
+    //     phone,
+    //     address,
+    //     city,
+    //     category
+    //   });
+    //   if (res && res.data.success) {
+    //     toast.success(res.data && res.data.message);
+    //     navigate("/");
+    //   } else {
+    //     toast.error(res.data.message);
+    //   }
+    // } catch (error) {
+    //   console.log(error);
+    //   toast.error("Something went wrong");
+    // }
   };
 
   return (
@@ -105,7 +127,7 @@ const CreatePost = () => {
               </div>
               <div className="mb-3">
                 <input
-                  type="number"
+                  type="text"
                   value={phone}
                   placeholder="Enter the phone number"
                   className="form-control"
@@ -165,7 +187,7 @@ const CreatePost = () => {
                   />
                 </label>
               </div>
-              <div className="mb-3">
+               <div className="mb-3">
                 {photo && (
                   <div className="text-center">
                     <img
@@ -176,7 +198,8 @@ const CreatePost = () => {
                     />
                   </div>
                 )}
-              </div>
+              </div> 
+
               <div className="mb-3">
                 <button className="btn btn-primary" onClick={handleCreate}>
                   CREATE POST
